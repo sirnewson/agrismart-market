@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriSmart Marketplace</title>
+  <!-- Link to the CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AgriSmart Marketplace</h1>
+    <p class="intro">
+      Welcome to the AgriSmart Marketplace MVP. This platform connects smallholder farmers
+      with bulk buyers, allowing you to browse available produce, add quantities to your
+      cart, and submit an order. By digitizing the trading process, this prototype
+      illustrates how we can reduce market inefficiencies and empower producers.
+    </p>
+
+    <!-- Dynamic product listing -->
+    <div id="product-list" class="product-list"></div>
+
+    <!-- Cart summary will be updated dynamically -->
+    <div id="cart-summary" class="cart hidden">
+      <h2>Cart Summary</h2>
+      <div id="cart-items"></div>
+      <p class="total" id="cart-total"></p>
+    </div>
+
+    <!-- Checkout form for buyer information -->
+    <form id="checkout-form" class="checkout-form hidden">
+      <h2>Buyer Details</h2>
+      <label>
+        Buyer Name
+        <input type="text" id="buyer-name" placeholder="e.g. Fresh Foods Ltd" required>
+      </label>
+      <label>
+        Buyer Location
+        <input type="text" id="buyer-location" placeholder="e.g. Nairobi" required>
+      </label>
+      <label>
+        Contact Number
+        <input type="text" id="buyer-contact" placeholder="e.g. 0712 345 678" required>
+      </label>
+      <button type="submit" class="btn primary">Submit Order</button>
+    </form>
+
+    <!-- Confirmation message will appear here after order submission -->
+    <div id="order-confirmation" class="order-confirmation hidden"></div>
+  </div>
+
+  <!-- Include the JavaScript file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
