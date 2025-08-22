@@ -1,0 +1,157 @@
+/*
+ * Styling for the AgriSmart Marketplace MVP.
+ *
+ * The design is clean and modern with a focus on readability and ease of use.
+ * Flexbox is used to lay out product rows, and subtle colours reinforce the
+ * agricultural theme. Buttons use a green palette to convey growth and
+ * sustainability. The layout is responsive and works well on mobile devices.
+ */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f2;
+  margin: 0;
+  padding: 0;
+  color: #2e3d29;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  margin-top: 0;
+  color: #1f4a1c;
+}
+
+.intro {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Product listing styles */
+.product-list {
+  margin-top: 10px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.product-name {
+  flex: 2;
+  font-weight: bold;
+}
+
+.product-price {
+  flex: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.product-qty {
+  width: 70px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-to-cart {
+  padding: 6px 14px;
+  background-color: #2da44e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #228c3f;
+}
+
+/* Cart summary styles */
+.cart {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #fbfdf8;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cart-item span {
+  display: inline-block;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Checkout form styles */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.checkout-form input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn.primary {
+  align-self: flex-start;
+  padding: 10px 22px;
+  background-color: #2da44e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn.primary:hover {
+  background-color: #228c3f;
+}
+
+.order-confirmation {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #cdeacd;
+  border-radius: 4px;
+  background-color: #e6f4e6;
+  color: #215c20;
+}
+
+.hidden {
+  display: none;
+}
